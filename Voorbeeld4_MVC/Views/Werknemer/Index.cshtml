@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="text-center text-danger">RAZOR TOEPASSINGEN</h1>
+    </div>
+    <div class="row">        
+        <div class="col-xs-12 col-sm-3">
+            <h2 class="alert-danger text-center">Berekening:</h2>
+            <p class="text-center">(1 + 2 * 50 + 0.5) = @(1 + 2 * 50 + 0.5)</p>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <h2 class="alert-info text-center">For loop</h2>
+            @for(var teller = 0; teller < 10; teller++)
+            {
+                <p class="text-center">@teller</p>
+            }
+            @*dit is razor commentaar*@
+            <!--dit is html commentaar-->
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <h2 class="alert-success text-center">While lus</h2>
+            @{ 
+                <h3 class="alert-success text-center ">Countdown</h3>
+                var getal = 10;
+                while(getal > 0)
+                {
+                    <h4 class="text-center">@getal</h4>
+                    getal--;
+                }
+            }
+        </div>
+        <div class="col-xs-12 col-sm-3">
+            <h2 class="alert-dismissable text-center">Spelleke</h2>
+            
+        </div>
+</div>
+
